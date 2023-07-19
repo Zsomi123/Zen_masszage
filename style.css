@@ -1,0 +1,33 @@
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding-left: 460px;
+    padding-right: 460px;
+  }
+
+  ul.navbar li {
+    float: left;
+  }
+
+  ul.navbar li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+  }
+
+  ul.navbar li a:hover {
+    background-color: #ddd;
+  }
+
+  /* Media query a reszponzív designhoz */
+  @media (max-width: 960px) {
+    ul.navbar {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+      

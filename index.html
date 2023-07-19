@@ -12,22 +12,21 @@
 
 </div>
 <body>
-      <ul class="navbar">
-        <li><a chref="index.html">Kezdőlap</a></li>
-        <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
-        <li><a href="#">Rólunk</a></li>
-        <li><a href="#">Kapcsolat</a></li>
+    <ul class="navbar">
+        <li><a class="menu" chref="index.html">Kezdőlap</a></li>
+        <li><a class="menu" href="szolgaltatasok.html">Szolgáltatások</a></li>
+        <li><a class="menu" href="#">Rólunk</a></li>
+        <li><a class="menu" href="#">Kapcsolat</a></li>
         <div class="langWrap">
           <li><a href="#" language='english' class="active">EN</a></li>
 			    <li><a href="#" language='german'>GE</a></li>
 			    <li><a href="#" language='russia'>RU</a></li>
         </div>
-      </ul>
+    </ul>
 
-      <div class="content">
-        <h2 class="title">Hello World</h2>
-        <p class="description">magyar szöveg</p>
-      </div>
+    <div class="content">
+      <h2 class="title">Hello World</h2>
+      <p class="description">magyar szöveg</p>
     </div>
 
 
@@ -36,6 +35,7 @@
       const link = document.querySelectorAll('a');
       const titleEl = document.querySelector('.title');
       const descrEl = document.querySelector('.description');
+      const navbar = document.querySelector('.menu')
   
       link.forEach(el => {
         el.addEventListener('click', () => {
@@ -46,24 +46,28 @@
   
           titleEl.textContent = data[attr].title;
           descrEl.textContent = data[attr].description;
+          navbar.textContent = data[attr].menu
         });
       });
       
       var data = {
           "english": 
           {
+            "menu": "home page",
             "title": "Angol",
             "description": 
               "agnol szöveg"
           },
           "german": 
           {
+            "menu": "Startseite",
             "title": "Német",
             "description": 
               "német szöveg"
           },
           "russia": 
           {
+            "menu": "домашняя страница",
             "title": "Orosz",
             "description": 
               "orosz szöveg"

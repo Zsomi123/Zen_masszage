@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
 ul.navbar {
     list-style-type: none;
-    margin: 0;
+    margin: 0px;
     padding: 0;
+    margin-left: 350px;
+    margin-right: 350px;
     overflow: hidden;
     background-color: #f1f1f1;
-    padding-left: 460px;
-    padding-right: 460px;
+    
   }
 
   ul.navbar li {
@@ -17,17 +20,45 @@ ul.navbar {
     padding: 14px 16px;
     text-decoration: none;
     color: black;
+    
   }
 
   ul.navbar li a:hover {
     background-color: #ddd;
   }
 
-  /* Media query a reszponzív designhoz */
+
   @media (max-width: 960px) {
     ul.navbar {
       padding-left: 20px;
       padding-right: 20px;
     }
   }
-      
+
+.fejlec {
+    display: grid;
+    background-image: url("pictures/pics3.png");
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: xx-large;
+    color: white;
+    align-items: center;
+    padding-left: 5%;
+    margin-top: -20px;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+.content{
+    margin-left: 350px;
+    margin-right: 350px;
+
+
+}
+.langWrap{
+    float: right;
+
+
+}
+

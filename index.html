@@ -1,16 +1,78 @@
-<html lang="en">
+<html lang="ehu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zen masszage</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<div class="fejlec">
+  <h1>Zen Masszage</h1>
+
+
+
+</div>
 <body>
       <ul class="navbar">
-        <li><a href="index.html">Kezdőlap</a></li>
-        <li><a href="#">Szolgáltatások</a></li>
+        <li><a chref="index.html">Kezdőlap</a></li>
+        <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
         <li><a href="#">Rólunk</a></li>
         <li><a href="#">Kapcsolat</a></li>
+        <div class="langWrap">
+          <li><a href="#" language='english' class="active">EN</a></li>
+			    <li><a href="#" language='german'>GE</a></li>
+			    <li><a href="#" language='russia'>RU</a></li>
+        </div>
       </ul>
+
+      <div class="content">
+        <h2 class="title">Hello World</h2>
+        <p class="description">magyar szöveg</p>
+      </div>
+    </div>
+
+
+    <script>
+      const langEl = document.querySelector('.langWrap');
+      const link = document.querySelectorAll('a');
+      const titleEl = document.querySelector('.title');
+      const descrEl = document.querySelector('.description');
+  
+      link.forEach(el => {
+        el.addEventListener('click', () => {
+          langEl.querySelector('.active').classList.remove('active');
+          el.classList.add('active');
+  
+          const attr = el.getAttribute('language');
+  
+          titleEl.textContent = data[attr].title;
+          descrEl.textContent = data[attr].description;
+        });
+      });
+      
+      var data = {
+          "english": 
+          {
+            "title": "Angol",
+            "description": 
+              "agnol szöveg"
+          },
+          "german": 
+          {
+            "title": "Német",
+            "description": 
+              "német szöveg"
+          },
+          "russia": 
+          {
+            "title": "Orosz",
+            "description": 
+              "orosz szöveg"
+          }
+        }
+    </script>
+      
+      
+
+
 </body>
 </html>

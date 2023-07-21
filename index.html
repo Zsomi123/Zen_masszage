@@ -4,23 +4,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zen masszage</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nyelvek.css">
 </head>
 <div class="fejlec">
   <h1>Zen Masszage</h1>
-
-
-
 </div>
-<body>
+<body style="background-color:powderblue;">
+  
     <ul class="navbar">
-        <li><a class="menu" chref="index.html">Kezdőlap</a></li>
-        <li><a class="menu" href="szolgaltatasok.html">Szolgáltatások</a></li>
-        <li><a class="menu" href="#">Rólunk</a></li>
-        <li><a class="menu" href="#">Kapcsolat</a></li>
+        <li><a chref="index.html">Kezdőlap</a></li>
+        <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+        <li><a href="#">Rólunk</a></li>
+        <li><a href="#">Kapcsolat</a></li>
         <div class="langWrap">
-          <li><a href="#" language='english' class="active">EN</a></li>
-			    <li><a href="#" language='german'>GE</a></li>
-			    <li><a href="#" language='russia'>RU</a></li>
+          <li><a href="index.html" class="hu"></a></li>
+          <li><a href="gbindex.html" class="gb"></a></li>
+			    <li><a href="geinedx.html" class="ge"></a></li>
+			    <li><a href="ruindex.html" class="ru"></a></li>
         </div>
     </ul>
 
@@ -28,54 +28,7 @@
       <h2 class="title">Hello World</h2>
       <p class="description">magyar szöveg</p>
     </div>
-
-
-    <script>
-      const langEl = document.querySelector('.langWrap');
-      const link = document.querySelectorAll('a');
-      const titleEl = document.querySelector('.title');
-      const descrEl = document.querySelector('.description');
-      const navbar = document.querySelector('.menu')
-  
-      link.forEach(el => {
-        el.addEventListener('click', () => {
-          langEl.querySelector('.active').classList.remove('active');
-          el.classList.add('active');
-  
-          const attr = el.getAttribute('language');
-  
-          titleEl.textContent = data[attr].title;
-          descrEl.textContent = data[attr].description;
-          navbar.textContent = data[attr].menu
-        });
-      });
-      
-      var data = {
-          "english": 
-          {
-            "menu": "home page",
-            "title": "Angol",
-            "description": 
-              "agnol szöveg"
-          },
-          "german": 
-          {
-            "menu": "Startseite",
-            "title": "Német",
-            "description": 
-              "német szöveg"
-          },
-          "russia": 
-          {
-            "menu": "домашняя страница",
-            "title": "Orosz",
-            "description": 
-              "orosz szöveg"
-          }
-        }
-    </script>
-      
-      
+<div id="div3">div</div>
 
 
 </body>

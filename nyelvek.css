@@ -1,0 +1,32 @@
+.hu{
+    background-image: url("flags/hu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10px;
+    margin-right: 15px;
+  }
+  .gb{
+    background-image: url("flags/gb.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10px;
+    margin-right: 15px;
+  
+  
+  }
+  .ge{
+    background-image: url("flags/de.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10px;
+    margin-right: 15px;
+  }
+  .ru{
+    background-image: url("flags/ru.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10px;
+    margin-right: 15px;
+  
+  
+  }

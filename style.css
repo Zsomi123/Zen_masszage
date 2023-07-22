@@ -2,6 +2,14 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
 
 
+body {
+  margin: 0;
+  padding: 0;
+  width: 1350px;
+  margin: 0 auto;
+
+}
+
 ul.navbar {
     list-style-type: none;
     margin: 0px;
@@ -11,8 +19,6 @@ ul.navbar {
     font-size: large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-    width: 1350px;
-    margin: 0 auto;
   }
 
   ul.navbar li {
@@ -40,39 +46,41 @@ ul.navbar {
   }
 
 .fejlec {
-    display: grid;
+    display: flex;
     background-image: url("pictures/fejlecvégl.png");
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
     font-size: xx-large;
     color: white;
     align-items: center;
     padding-left: 5%;
     margin-top: -20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-    width: 1350px;
-    margin: 0 auto;
-}
-
-.content{
-  width: 1425px;
-  margin: 0 auto;
+    height: 500px;
 
 }
 .langWrap{
     float: right;
 
-
 }
 
-#div3{
-  background-color: #ecebeb;;
-  width: 1425px;
+footer {
+  background-color: #ecebeb;
+  color: black;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1000px;
   margin: 0 auto;
-  
-
+  text-align: center;
 }
+
+p {
+  margin: 0;
+}
+
+
+
+

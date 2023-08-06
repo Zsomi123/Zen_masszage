@@ -7,6 +7,10 @@
     width: 100%;
 
 }
+.szoveg{
+  margin-left: 2%;
+  margin-top: 2%;
+}
 
 .prev, .next {
     cursor: pointer;
@@ -14,7 +18,7 @@
     top: 50%;
     width: auto;
     padding: 16px;
-    margin-top: -22px;
+    margin-top: -40px;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -30,9 +34,16 @@
     background-color: rgba(0,0,0,0.8);
   }
   .slideshow-container {
-    max-width: 1000px;
+    max-width: 600px;
     position: relative;
-    margin: auto;
+    margin-left: 5%;
+  }
+
+  .mySlides{
+    border: 5px solid #24e41e;
+
+
+
   }
   .fade {
     animation-name: fade;
